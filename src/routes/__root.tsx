@@ -1,9 +1,16 @@
+import { useEffect } from 'react'
 import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { ChatWidget } from '../components/ChatWidget'
 
 import '../styles.css'
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
 
 export const Route = createRootRoute({
   head: () => ({
@@ -33,6 +40,19 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  // GA4: track phone and email link clicks site-wide
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as HTMLElement).closest('a')
+      if (!a) return
+      const href = a.getAttribute('href') || ''
+      if (href.startsWith('tel:')) window.gtag?.('event', 'phone_click')
+      if (href.startsWith('mailto:')) window.gtag?.('event', 'email_click')
+    }
+    document.addEventListener('click', onClick)
+    return () => document.removeEventListener('click', onClick)
+  }, [])
+
   return (
     <>
       <Header />
