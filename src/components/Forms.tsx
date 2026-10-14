@@ -9,11 +9,12 @@ function encode(data: Record<string, string>) {
 }
 
 async function submitForm(formName: string, data: Record<string, string>) {
-  await fetch('/__forms.html', {
+  const res = await fetch('/__forms.html', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: encode({ 'form-name': formName, ...data }),
   })
+  return res.ok
 }
 
 function SuccessMessage({ title, body }: { title: string; body: string }) {
@@ -101,8 +102,14 @@ export function ContactForm({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    await submitForm('contact', { ...fields, consent: consent ? 'Yes' : 'No' })
+    const ok = await submitForm('contact', { ...fields, consent: consent ? 'Yes' : 'No' })
     setLoading(false)
+    // GA4: contact form lead (only when the submission was accepted)
+    if (ok) {
+      try {
+        ;(window as any).gtag?.('event', 'contact_form_lead')
+      } catch {}
+    }
     setSubmitted(true)
   }
 
