@@ -64,6 +64,16 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             __html: `!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"T7senFxavibVR31NNXUTsK",debug:true});`,
           }}
         />
+        {/* ⬇️ GOOGLE ANALYTICS (GA4) ⬇️ */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PK6Y15X41Q" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-PK6Y15X41Q');`,
+          }}
+        />
       </head>
       <body>
         {children}
