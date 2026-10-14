@@ -101,6 +101,10 @@ function SellerValuation() {
       try {
         ;(window as any).oaiq?.('measure', 'lead_created', { type: 'customer_action' })
       } catch {}
+      // GA4: seller valuation lead
+      try {
+        ;(window as any).gtag?.('event', 'seller_valuation_lead')
+      } catch {}
       setStatus('done')
     } catch (err) {
       console.error(err)
