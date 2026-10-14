@@ -100,12 +100,6 @@ export function ContactForm({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-     <SmsConsentCheckbox
-        checked={consent}
-        onChange={setConsent}
-        required={false}
-        isLight={isLight}
-      />
     setLoading(true)
     await submitForm('contact', { ...fields, consent: consent ? 'Yes' : 'No' })
     setLoading(false)
@@ -173,7 +167,7 @@ export function ContactForm({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
           className={`${inp} resize-none`}
         />
       </div>
-      <SmsConsentCheckbox checked={consent} onChange={setConsent} required={consentRequired} isLight={isLight} />
+      <SmsConsentCheckbox checked={consent} onChange={setConsent} required={false} isLight={isLight} />
       <button type="submit" disabled={loading} className="btn-gold w-full py-4 rounded-lg text-base tracking-wide cursor-pointer disabled:opacity-60">
         {loading ? 'Sending...' : 'Send Message'}
       </button>
@@ -208,12 +202,6 @@ export function ShowingForm({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    <SmsConsentCheckbox
-        checked={consent}
-        onChange={setConsent}
-        required={false}
-        isLight={isLight}
-      />
     setLoading(true)
     await submitForm('schedule-showing', { ...fields, consent: consent ? 'Yes' : 'No' })
     setLoading(false)
@@ -288,7 +276,7 @@ export function ShowingForm({ theme = 'dark' }: { theme?: 'dark' | 'light' }) {
           className={`${inp} resize-none`}
         />
       </div>
-      <SmsConsentCheckbox checked={consent} onChange={setConsent} required isLight={isLight} />
+      <SmsConsentCheckbox checked={consent} onChange={setConsent} required={false} isLight={isLight} />
       <button type="submit" disabled={loading} className="btn-gold w-full py-4 rounded-lg text-base tracking-wide cursor-pointer disabled:opacity-60">
         {loading ? 'Requesting...' : 'Request Showing'}
       </button>
