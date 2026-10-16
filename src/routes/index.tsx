@@ -17,6 +17,15 @@ import { CTABanner, StatsBar, TrustStrip, FeatureTile } from '../components/Sect
 
 export const Route = createFileRoute('/')({
   component: Home,
+  head: () => ({
+    meta: [
+      { title: 'Miami Real Estate Agent for Sellers | Jose Anzola, Compass' },
+      {
+        property: 'og:title',
+        content: 'Miami Real Estate Agent for Sellers | Jose Anzola, Compass',
+      },
+    ],
+  }),
 })
 
 function Home() {
