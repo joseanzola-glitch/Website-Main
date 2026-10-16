@@ -165,8 +165,8 @@ function Sell() {
           {[
             { value: '98%', label: 'List-to-sold price ratio' },
             { value: '22', label: 'Avg days on market' },
-            { value: '$500M+', label: 'Sales volume' },
-            { value: '200+', label: 'Homes closed' },
+            { value: '$100M+', label: 'Sales volume' },
+            { value: '240+', label: 'Homes closed' },
           ].map((s) => (
             <div key={s.label}>
               <div className="text-gradient-gold text-3xl md:text-4xl font-serif font-bold mb-2">{s.value}</div>
