@@ -12,11 +12,20 @@ export const Route = createFileRoute('/sell')({
   component: Sell,
   head: () => ({
     meta: [
-      { title: 'Sell Your Home | Jose Anzola Compass Miami' },
+      { title: 'Sell Your Miami Home for Top Dollar | Jose Anzola, Compass' },
       {
         name: 'description',
         content:
-          'Sell your Miami home for top dollar with Jose Anzola, Compass real estate agent serving Miami and South Florida.',
+          'Selling in Miami or South Florida? Jose Anzola of Compass combines data-driven pricing, strong marketing and tough negotiation to help you net more.',
+      },
+      {
+        property: 'og:title',
+        content: 'Sell Your Miami Home for Top Dollar | Jose Anzola, Compass',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Selling in Miami or South Florida? Jose Anzola of Compass combines data-driven pricing, strong marketing and tough negotiation to help you net more.',
       },
     ],
   }),
@@ -159,32 +168,4 @@ function Sell() {
             { value: '$500M+', label: 'Sales volume' },
             { value: '200+', label: 'Homes closed' },
           ].map((s) => (
-            <div key={s.label}>
-              <div className="text-gradient-gold font-serif text-4xl font-bold mb-2">{s.value}</div>
-              <div className="text-luxury-500 text-xs uppercase tracking-[0.15em]">{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-5xl font-bold text-luxury-950 mb-6">
-            Thinking of listing your home?
-          </h2>
-          <p className="text-luxury-600 text-lg mb-10 font-light">
-            Let's talk strategy. An honest conversation with someone who knows the Miami market —
-            no pressure, no pitch.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="btn-gold px-8 py-4 rounded-lg text-base">
-              Schedule a Consultation
-              <ArrowRightIcon className="w-4 h-4 ml-2" />
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
+            <div
