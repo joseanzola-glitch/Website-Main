@@ -168,4 +168,35 @@ function Sell() {
             { value: '$500M+', label: 'Sales volume' },
             { value: '200+', label: 'Homes closed' },
           ].map((s) => (
-            <div
+            <div key={s.label}>
+              <div className="text-gradient-gold text-3xl md:text-4xl font-serif font-bold mb-2">{s.value}</div>
+              <div className="text-luxury-500 text-xs font-medium uppercase tracking-[0.15em]">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 md:py-24 px-6 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="gold-divider mx-auto mb-6" />
+          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-5">
+            What is your home worth today?
+          </h2>
+          <p className="text-luxury-600 text-lg leading-relaxed mb-10">
+            Get a complimentary, data-backed valuation and a custom selling plan — no obligation.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/seller-valuation" className="btn-gold px-8 py-4 rounded-lg text-base">
+              Get My Home Valuation
+              <ArrowRightIcon className="w-4 h-4 ml-2" />
+            </Link>
+            <Link to="/contact" className="btn-gold-outline px-8 py-4 rounded-lg text-base">
+              Schedule a Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
