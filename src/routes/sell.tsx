@@ -176,6 +176,60 @@ function Sell() {
         </div>
       </section>
 
+            {/* Seller proof: reviews + recent sales */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-gold-600 font-semibold uppercase tracking-[0.2em] text-xs mb-4">Seller Results</div>
+            <div className="gold-divider mx-auto mb-6" />
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-luxury-950 leading-tight">
+              What sellers say, and what sold.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-10">
+            {[
+              {
+                text: 'The team is incredible. They sold my properties in record time, and they made the entire process super easy. Thank you for everything.',
+                name: 'Alfredo Schael',
+                role: 'Seller',
+              },
+              {
+                text: 'Jose and Krystyna did an excellent job during the sales process of our property in the prestigious Coral Ridge section of Fort Lauderdale. They assisted us step by step and helped us overcome many hurdles successfully. They were always available and very responsive. We felt supported and educated throughout the process. We are very pleased and highly recommend their team.',
+                name: 'Elfie Wagner',
+                role: 'Seller, Coral Ridge',
+              },
+            ].map((t) => (
+              <div key={t.name} className="luxury-card rounded-2xl p-8">
+                <p className="text-luxury-600 leading-relaxed mb-6 text-sm italic">"{t.text}"</p>
+                <div className="text-luxury-950 font-semibold text-sm">{t.name}</div>
+                <div className="text-luxury-400 text-xs">{t.role}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-4 lg:gap-6">
+            {[
+              { area: 'Silver Bluff', address: '1930 SW 25th St', price: '$2,320,000' },
+              { area: 'Hollywood Beach', address: '2711 S Ocean Dr, Unit 1202', price: '$2,300,000' },
+              { area: 'Biscayne Park', address: '835 NE 120th St', price: '$2,250,000' },
+            ].map((s) => (
+              <div key={s.address} className="luxury-card rounded-2xl p-6 text-center">
+                <div className="text-gold-600 text-[10px] font-bold uppercase tracking-widest mb-2">Sold · {s.area}</div>
+                <div className="font-serif text-2xl font-bold text-luxury-950 mb-1">{s.price}</div>
+                <div className="text-luxury-500 text-sm">{s.address}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link to="/listings" className="btn-gold-outline px-8 py-4 rounded-lg text-base">
+              See All Sold Homes
+              <ArrowRightIcon className="w-4 h-4 ml-2" />
+            </Link>
+          </div>
+        </div>
+      </section>
       {/* CTA */}
       <section className="py-20 md:py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
