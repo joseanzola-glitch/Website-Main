@@ -7,6 +7,7 @@ const navLinks = [
   { label: 'Sell', to: '/sell' },
   { label: 'Buy', to: '/buy' },
   { label: 'Listings', to: '/listings' },
+  { label: 'Neighborhoods', to: '/neighborhoods' },
   { label: 'About', to: '/about' },
   { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact', to: '/contact' },
