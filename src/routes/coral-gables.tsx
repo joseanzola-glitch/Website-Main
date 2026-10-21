@@ -34,7 +34,7 @@ function CoralGables() {
       <section className="relative min-h-[440px] md:min-h-[560px] flex items-end overflow-hidden bg-luxury-950">
         <img
           src="/images/neighborhoods/coral-gables.jpg"
-          alt="Coral Gables neighborhood in Florida"
+          alt="Residential neighborhood and real estate in Coral Gables, Florida"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -53,13 +53,13 @@ function CoralGables() {
           </p>
 
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-5">
-            Coral Gables
+            Coral Gables Real Estate
           </h1>
 
           <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
-            Timeless architecture, beautiful streets, and
-            distinctive residential properties in one of
-            South Florida's most recognizable communities.
+            Explore distinctive homes, neighborhood character,
+            and opportunities to buy or sell real estate in
+            Coral Gables, Florida.
           </p>
         </div>
       </section>
@@ -72,24 +72,32 @@ function CoralGables() {
           </p>
 
           <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8">
-            Welcome to Coral Gables
+            Living in Coral Gables, Florida
           </h2>
 
           <div className="gold-divider mb-8" />
 
           <p className="text-luxury-600 text-lg leading-relaxed mb-6">
             Coral Gables is a distinctive city in Miami-Dade
-            County, recognized for its Mediterranean-inspired
+            County, known for its Mediterranean-inspired
             architecture, landscaped streets, and carefully
-            planned residential areas.
+            planned residential communities.
+          </p>
+
+          <p className="text-luxury-600 text-lg leading-relaxed mb-6">
+            Often called the City Beautiful, Coral Gables
+            features historic residences, luxury estates,
+            waterfront properties, and contemporary homes.
+            Its residential areas offer a variety of
+            architectural styles and property types.
           </p>
 
           <p className="text-luxury-600 text-lg leading-relaxed">
-            Often called the City Beautiful, Coral Gables
-            features historic residences, luxury estates,
-            and modern homes. The city also offers access
-            to destinations such as Miracle Mile, the
-            Venetian Pool, and the University of Miami.
+            The city is also home to well-known destinations
+            including Miracle Mile, Venetian Pool, and the
+            University of Miami. These amenities contribute
+            to the distinctive lifestyle associated with
+            Coral Gables real estate.
           </p>
         </div>
       </section>
@@ -117,8 +125,8 @@ function CoralGables() {
 
               <p className="text-luxury-600 leading-relaxed">
                 Mediterranean Revival architecture, historic
-                landmarks, and thoughtfully designed homes
-                contribute to the city's identity.
+                landmarks, and thoughtfully designed residences
+                contribute to the city's recognizable character.
               </p>
             </div>
 
@@ -130,9 +138,9 @@ function CoralGables() {
               </h3>
 
               <p className="text-luxury-600 leading-relaxed">
-                Coral Gables offers shopping, restaurants,
-                cultural destinations, parks, and access
-                to major Miami-area locations.
+                Coral Gables offers restaurants, shopping,
+                cultural destinations, parks, and convenient
+                connections to surrounding Miami communities.
               </p>
             </div>
 
@@ -140,14 +148,14 @@ function CoralGables() {
               <div className="text-gold-600 text-3xl mb-5">03</div>
 
               <h3 className="font-serif text-2xl font-bold mb-4">
-                Diverse Luxury Homes
+                Distinctive Luxury Homes
               </h3>
 
               <p className="text-luxury-600 leading-relaxed">
                 From historic residences to waterfront
                 estates and contemporary properties,
-                Coral Gables offers a wide range of
-                distinctive real estate.
+                Coral Gables offers a diverse selection
+                of distinctive residential real estate.
               </p>
             </div>
           </div>
@@ -157,9 +165,10 @@ function CoralGables() {
       {/* Buyers and Sellers */}
       <section className="py-20 md:py-24 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          {/* Seller Content */}
           <div>
             <p className="text-gold-600 uppercase tracking-[0.2em] text-xs font-semibold mb-4">
-              For Homeowners
+              For Coral Gables Homeowners
             </p>
 
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
@@ -167,28 +176,41 @@ function CoralGables() {
             </h2>
 
             <p className="text-luxury-600 leading-relaxed mb-6">
-              Pricing a property in Coral Gables involves
-              understanding its location, architectural
-              character, condition, lot size, renovations,
-              and recent comparable sales.
+              Wondering what your Coral Gables home is worth?
+              Whether you own a historic Mediterranean-style
+              residence, a luxury estate, or a modern property,
+              understanding your home's potential market value
+              is an important first step toward selling.
+            </p>
+
+            <p className="text-luxury-600 leading-relaxed mb-6">
+              Property values can vary based on location,
+              architectural character, condition, lot size,
+              renovations, and recent comparable sales.
+              A personalized evaluation can help homeowners
+              understand how their property compares with
+              competing homes on the market.
             </p>
 
             <p className="text-luxury-600 leading-relaxed mb-8">
-              Jose Anzola of Compass can help homeowners
-              evaluate their property's market position
-              and develop a tailored marketing strategy
-              designed to reach qualified buyers.
+              Jose Anzola of Compass helps Coral Gables
+              homeowners evaluate their property's market
+              position and develop a tailored pricing and
+              marketing strategy. Whether you're ready to
+              list or simply exploring your options,
+              request a home valuation to get started.
             </p>
 
             <Link
               to="/seller-valuation"
               className="btn-gold inline-flex items-center gap-2 px-7 py-4 rounded-lg"
             >
-              Request a Home Valuation
+              Find Out What My Home Is Worth
               <ArrowRightIcon className="w-4 h-4" />
             </Link>
           </div>
 
+          {/* Buyer Content */}
           <div>
             <p className="text-gold-600 uppercase tracking-[0.2em] text-xs font-semibold mb-4">
               For Home Buyers
@@ -199,25 +221,126 @@ function CoralGables() {
             </h2>
 
             <p className="text-luxury-600 leading-relaxed mb-6">
-              Coral Gables offers properties across
-              different architectural styles, price
-              ranges, and residential settings,
-              including historic homes and luxury estates.
+              Coral Gables offers properties across different
+              architectural styles, price ranges, and residential
+              settings, including historic homes, luxury
+              estates, and waterfront residences.
+            </p>
+
+            <p className="text-luxury-600 leading-relaxed mb-6">
+              Buyers should consider property condition,
+              location, comparable sales, and applicable
+              building or historic preservation requirements
+              when evaluating a property.
             </p>
 
             <p className="text-luxury-600 leading-relaxed mb-8">
-              Buyers should consider property condition,
-              location, comparable sales, and applicable
-              local building or historic preservation
-              requirements when evaluating a home.
+              Whether you're relocating to Coral Gables,
+              searching for a distinctive luxury home,
+              or exploring the local real estate market,
+              Jose can help you review available options
+              and navigate the buying process.
             </p>
 
             <Link
               to="/contact"
               className="btn-gold-outline inline-flex items-center gap-2 px-7 py-4 rounded-lg"
             >
-              Ask Jose About Coral Gables
+              Ask Jose About Coral Gables Homes
               <ArrowRightIcon className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Home Valuation Information */}
+      <section className="ivory-bg py-20 md:py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-gold-600 uppercase tracking-[0.2em] text-xs font-semibold mb-4">
+            Coral Gables Home Values
+          </p>
+
+          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8">
+            What Determines Your Coral Gables Home's Value?
+          </h2>
+
+          <div className="gold-divider mb-8" />
+
+          <p className="text-luxury-600 text-lg leading-relaxed mb-6">
+            If you're considering selling your home in
+            Coral Gables, understanding the factors that
+            influence its potential market value can help
+            you plan your next move.
+          </p>
+
+          <p className="text-luxury-600 text-lg leading-relaxed mb-6">
+            Recent comparable sales, property condition,
+            architectural features, square footage,
+            lot size, renovations, and location all
+            contribute to a property's market position.
+            Historic characteristics or waterfront
+            features may also require additional
+            consideration during the pricing process.
+          </p>
+
+          <p className="text-luxury-600 text-lg leading-relaxed mb-8">
+            An individualized home valuation provides
+            a more relevant starting point than relying
+            exclusively on a general online estimate.
+            Jose can help you review your property's
+            characteristics alongside local market data.
+          </p>
+
+          <Link
+            to="/seller-valuation"
+            className="btn-gold inline-flex items-center gap-2 px-7 py-4 rounded-lg"
+          >
+            Request My Coral Gables Home Valuation
+            <ArrowRightIcon className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Internal Navigation */}
+      <section className="py-16 md:py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5">
+            Explore More Miami Neighborhoods
+          </h2>
+
+          <p className="text-luxury-600 leading-relaxed mb-8">
+            Compare Coral Gables with nearby Miami-area
+            communities and discover additional real estate
+            opportunities throughout South Florida.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/south-miami"
+              className="btn-gold-outline px-6 py-3 rounded-lg"
+            >
+              South Miami
+            </Link>
+
+            <Link
+              to="/silver-bluff"
+              className="btn-gold-outline px-6 py-3 rounded-lg"
+            >
+              Silver Bluff
+            </Link>
+
+            <Link
+              to="/the-roads"
+              className="btn-gold-outline px-6 py-3 rounded-lg"
+            >
+              The Roads
+            </Link>
+
+            <Link
+              to="/neighborhoods"
+              className="btn-gold-outline px-6 py-3 rounded-lg"
+            >
+              All Neighborhoods
             </Link>
           </div>
         </div>
@@ -227,26 +350,36 @@ function CoralGables() {
       <section className="bg-luxury-950 text-white py-20 md:py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-gold-600 uppercase tracking-[0.2em] text-xs font-semibold mb-4">
-            Let's Connect
+            Coral Gables Real Estate
           </p>
 
           <h2 className="font-serif text-3xl md:text-5xl font-bold mb-6">
-            Explore Your Real Estate Opportunities in Coral Gables
+            Ready to Sell Your Home in Coral Gables?
           </h2>
 
           <p className="text-white/75 text-lg leading-relaxed mb-9">
-            Whether you're preparing to sell a property
-            or searching for your next home in Coral Gables,
-            connect with Jose to discuss your real estate goals.
+            Whether you're preparing to sell a luxury property,
+            exploring your home's potential value, or planning
+            your next move, connect with Jose Anzola of Compass
+            to discuss a personalized real estate strategy.
           </p>
 
-          <Link
-            to="/contact"
-            className="btn-gold inline-flex items-center gap-2 px-8 py-4 rounded-lg"
-          >
-            Contact Jose
-            <ArrowRightIcon className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/seller-valuation"
+              className="btn-gold inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg"
+            >
+              Get My Home Valuation
+              <ArrowRightIcon className="w-4 h-4" />
+            </Link>
+
+            <Link
+              to="/contact"
+              className="btn-gold-outline inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg"
+            >
+              Contact Jose
+            </Link>
+          </div>
         </div>
       </section>
     </div>
