@@ -7,12 +7,12 @@ export const Route = createFileRoute('/neighborhoods')({
   head: () => ({
     meta: [
       {
-        title: 'Miami Neighborhoods | Jose Anzola, Compass',
+        title: 'Miami Neighborhoods & Real Estate | Jose Anzola, Compass',
       },
       {
         name: 'description',
         content:
-          'Explore Shenandoah, The Roads, Silver Bluff, and Coral Gables with Jose Anzola of Compass. Discover Miami neighborhoods and real estate opportunities.',
+          'Explore 11 Miami-area neighborhoods including Coral Gables, Doral, Buena Vista, Edgewater, Miami Shores, Aventura, South Miami, and Miami Springs with Jose Anzola of Compass.',
       },
       {
         property: 'og:title',
@@ -21,7 +21,7 @@ export const Route = createFileRoute('/neighborhoods')({
       {
         property: 'og:description',
         content:
-          'Discover Miami neighborhoods and explore your options for buying or selling with Jose Anzola at Compass.',
+          'Discover 11 distinctive Miami-area neighborhoods and explore your options for buying or selling real estate with Jose Anzola at Compass.',
       },
     ],
   }),
@@ -59,6 +59,62 @@ const neighborhoods = [
       'Mediterranean-inspired architecture, beautiful streets, and distinctive homes.',
     image: '/images/neighborhoods/coral-gables.jpg',
     link: '/coral-gables',
+  },
+  {
+    name: 'Doral',
+    location: 'Doral, Florida',
+    description:
+      'Modern residential communities, beautiful parks, shopping, dining, and a dynamic Miami-Dade lifestyle.',
+    image: '/images/neighborhoods/doral.jpg',
+    link: '/doral',
+  },
+  {
+    name: 'Buena Vista',
+    location: 'Miami, Florida',
+    description:
+      'Historic homes, tree-lined streets, and residential charm near the Miami Design District.',
+    image: '/images/neighborhoods/buena-vista.jpg',
+    link: '/buena-vista',
+  },
+  {
+    name: 'Edgewater',
+    location: 'Miami, Florida',
+    description:
+      'Waterfront condominiums, Biscayne Bay views, and contemporary urban living near Downtown Miami.',
+    image: '/images/neighborhoods/edgewater.jpg',
+    link: '/edgewater',
+  },
+  {
+    name: 'Miami Shores',
+    location: 'Miami Shores, Florida',
+    description:
+      'Established residential streets, distinctive architecture, and neighborhood charm near Biscayne Bay.',
+    image: '/images/neighborhoods/miami-shores.jpg',
+    link: '/miami-shores',
+  },
+  {
+    name: 'Aventura',
+    location: 'Aventura, Florida',
+    description:
+      'Luxury waterfront residences, condominium communities, premier shopping, and coastal convenience.',
+    image: '/images/neighborhoods/aventura.jpg',
+    link: '/aventura',
+  },
+  {
+    name: 'South Miami',
+    location: 'South Miami, Florida',
+    description:
+      'Tree-lined residential streets, local restaurants, and a vibrant downtown with convenient transit access.',
+    image: '/images/neighborhoods/south-miami.jpg',
+    link: '/south-miami',
+  },
+  {
+    name: 'Miami Springs',
+    location: 'Miami Springs, Florida',
+    description:
+      'Historic architecture, established residential neighborhoods, and distinctive community character.',
+    image: '/images/neighborhoods/miami-springs.jpg',
+    link: '/miami-springs',
   },
 ]
 
@@ -102,7 +158,7 @@ function Neighborhoods() {
                 <div className="relative aspect-[4/3] overflow-hidden bg-luxury-100">
                   <img
                     src={neighborhood.image}
-                    alt={`${neighborhood.name} neighborhood in Miami area`}
+                    alt={`${neighborhood.name} neighborhood in the Miami area`}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
