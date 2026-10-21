@@ -7,21 +7,21 @@ export const Route = createFileRoute('/coral-gables')({
   head: () => ({
     meta: [
       {
-        title: 'Coral Gables Real Estate | Jose Anzola, Compass',
+        title: 'Coral Gables Real Estate Agent & Home Values | Jose Anzola',
       },
       {
         name: 'description',
         content:
-          'Explore Coral Gables real estate, Mediterranean-inspired architecture, neighborhood highlights, and opportunities for buyers and sellers with Jose Anzola of Compass.',
+          'Thinking of selling your home in Coral Gables, FL? Explore local real estate, property values, and personalized selling strategies with Jose Anzola at Compass.',
       },
       {
         property: 'og:title',
-        content: 'Coral Gables Real Estate | Jose Anzola',
+        content: 'Coral Gables Real Estate & Home Valuation | Jose Anzola',
       },
       {
         property: 'og:description',
         content:
-          'Discover Coral Gables, Florida, and explore your options for buying or selling a home.',
+          'Discover Coral Gables real estate and learn how Jose Anzola of Compass can help you evaluate your home and prepare for a successful sale.',
       },
     ],
   }),
