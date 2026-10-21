@@ -191,19 +191,37 @@ function Neighborhoods() {
         </div>
       </section>
 
+      
       {/* Seller CTA */}
       <section className="py-20 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="gold-divider mx-auto mb-6" />
 
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-5">
-            Thinking About Selling Your Home?
+          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-6">
+            Thinking About Selling Your Home in Miami?
           </h2>
 
+          <p className="text-luxury-600 text-lg leading-relaxed mb-6">
+            Selling a home in Miami-Dade requires more than simply
+            putting a property on the market. From Coral Gables
+            and Doral to Miami Shores, Shenandoah, and South Miami,
+            each neighborhood has its own market conditions,
+            buyer expectations, and opportunities.
+          </p>
+
+          <p className="text-luxury-600 text-lg leading-relaxed mb-6">
+            Jose Anzola, a real estate agent with Compass,
+            helps homeowners explore their property's potential
+            market value, understand local competition, and
+            develop a personalized selling strategy.
+          </p>
+
           <p className="text-luxury-600 text-lg leading-relaxed mb-10">
-            Whether you're considering selling now or planning
-            for the future, Jose can help you explore your
-            property's value and develop a personalized strategy.
+            Whether you're preparing to sell a luxury home,
+            considering relocating, or simply wondering
+            what your property could be worth in today's
+            Miami real estate market, start with a
+            personalized home valuation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -211,7 +229,7 @@ function Neighborhoods() {
               to="/seller-valuation"
               className="btn-gold px-8 py-4 rounded-lg text-base"
             >
-              Get My Home Valuation
+              Find Out What My Home Is Worth
               <ArrowRightIcon className="w-4 h-4 ml-2" />
             </Link>
 
@@ -219,7 +237,7 @@ function Neighborhoods() {
               to="/contact"
               className="btn-gold-outline px-8 py-4 rounded-lg text-base"
             >
-              Contact Jose
+              Speak With Jose About Selling
             </Link>
           </div>
         </div>
