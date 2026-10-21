@@ -1,5 +1,8 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Website Pages -->
   <url><loc>https://joseguillermoanzola.com/</loc></url>
   <url><loc>https://joseguillermoanzola.com/sell</loc></url>
   <url><loc>https://joseguillermoanzola.com/seller-valuation</loc></url>
@@ -8,4 +11,21 @@
   <url><loc>https://joseguillermoanzola.com/about</loc></url>
   <url><loc>https://joseguillermoanzola.com/testimonials</loc></url>
   <url><loc>https://joseguillermoanzola.com/contact</loc></url>
+
+  <!-- Main Neighborhoods Page -->
+  <url><loc>https://joseguillermoanzola.com/neighborhoods</loc></url>
+
+  <!-- Neighborhood Detail Pages -->
+  <url><loc>https://joseguillermoanzola.com/shenandoah</loc></url>
+  <url><loc>https://joseguillermoanzola.com/the-roads</loc></url>
+  <url><loc>https://joseguillermoanzola.com/silver-bluff</loc></url>
+  <url><loc>https://joseguillermoanzola.com/coral-gables</loc></url>
+  <url><loc>https://joseguillermoanzola.com/doral</loc></url>
+  <url><loc>https://joseguillermoanzola.com/buena-vista</loc></url>
+  <url><loc>https://joseguillermoanzola.com/edgewater</loc></url>
+  <url><loc>https://joseguillermoanzola.com/miami-shores</loc></url>
+  <url><loc>https://joseguillermoanzola.com/aventura</loc></url>
+  <url><loc>https://joseguillermoanzola.com/south-miami</loc></url>
+  <url><loc>https://joseguillermoanzola.com/miami-springs</loc></url>
+
 </urlset>
