@@ -192,6 +192,33 @@ function Neighborhoods() {
       </section>
 
       
+      {/* Neighborhood Directory */}
+      <section className="py-16 md:py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5 text-center">
+            Explore Real Estate in Miami Neighborhoods
+          </h2>
+
+          <p className="text-luxury-600 text-lg text-center max-w-3xl mx-auto mb-10">
+            Discover local real estate opportunities and information
+            about buying or selling a home in these Miami-area communities.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {neighborhoods.map((neighborhood) => (
+              <Link
+                key={neighborhood.name}
+                to={neighborhood.link}
+                className="text-gold-600 font-semibold hover:underline py-2"
+              >
+                {neighborhood.name} Real Estate →
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Seller CTA */}
       <section className="py-20 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
