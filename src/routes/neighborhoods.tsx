@@ -7,12 +7,12 @@ export const Route = createFileRoute('/neighborhoods')({
   head: () => ({
     meta: [
       {
-        title: 'Miami Neighborhoods & Real Estate | Jose Anzola, Compass',
+        title: 'Miami Neighborhoods | Buy, Sell & Home Values | Jose Anzola',
       },
       {
         name: 'description',
         content:
-          'Explore 11 Miami-area neighborhoods including Coral Gables, Doral, Buena Vista, Edgewater, Miami Shores, Aventura, South Miami, and Miami Springs with Jose Anzola of Compass.',
+          'Explore Miami neighborhoods, local real estate, and home values. Thinking of selling in Coral Gables, Doral, Miami Shores, or nearby? Connect with Jose Anzola at Compass.',
       },
       {
         property: 'og:title',
