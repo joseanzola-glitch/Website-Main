@@ -102,6 +102,14 @@ const backLinkStyle = {
 
 const disclaimerStyle = { fontSize: '13px', color: GRAY, marginTop: '32px', lineHeight: 1.6 }
 
+const photoStyle = {
+  width: '100%',
+  height: 'auto',
+  borderRadius: '12px',
+  marginBottom: '36px',
+  display: 'block',
+}
+
 function ArticlePage() {
   return (
     <main style={pageStyle}>
