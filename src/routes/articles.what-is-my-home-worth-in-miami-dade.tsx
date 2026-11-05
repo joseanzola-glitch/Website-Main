@@ -121,6 +121,12 @@ function ArticlePage() {
       <h1 style={h1Style}>What Is My Home Worth in Miami-Dade? 5 Ways to Find Out</h1>
       <p style={bylineStyle}>By Jose Anzola, Compass Real Estate</p>
 
+            <img
+        src="/articlephoto1.png"
+        alt="Miami-Dade home with a For Sale sign"
+        style={photoStyle}
+      />
+
       <p style={introStyle}>
         If you own a home in Miami-Dade, sooner or later you will ask yourself,
         "What is my home worth?" Maybe you are thinking about selling, maybe you
