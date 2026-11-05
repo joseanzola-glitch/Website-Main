@@ -13,19 +13,107 @@ export const Route = createFileRoute('/articles/what-is-my-home-worth-in-miami-d
   component: ArticlePage,
 })
 
-const pageStyle = { maxWidth: '720px', margin: '0 auto', padding: '40px 20px' }
-const h1Style = { fontSize: '36px', fontWeight: 700, lineHeight: 1.2, marginBottom: '12px' }
-const h2Style = { fontSize: '24px', fontWeight: 700, marginTop: '36px', marginBottom: '12px' }
-const pStyle = { fontSize: '18px', lineHeight: 1.7, marginBottom: '18px' }
-const bylineStyle = { fontSize: '16px', color: '#666666', marginBottom: '28px' }
+// ---- COLORS (change these here if something looks off) ----
+const GOLD = '#9a7429'
+const DARK = '#1a1a1a'
+const TEXT = '#333333'
+const GRAY = '#6b6b6b'
+const LINE = '#e5e2dc'
+const BEIGE = '#f3f1ec'
+
+// ---- STYLES ----
+const pageStyle = { maxWidth: '740px', margin: '0 auto', padding: '56px 24px 80px' }
+
+const eyebrowStyle = {
+  fontSize: '13px',
+  fontWeight: 600,
+  letterSpacing: '0.18em',
+  textTransform: 'uppercase',
+  color: GOLD,
+  marginBottom: '16px',
+}
+
+const h1Style = {
+  fontSize: 'clamp(30px, 5vw, 44px)',
+  fontWeight: 700,
+  lineHeight: 1.15,
+  color: DARK,
+  marginBottom: '20px',
+}
+
+const bylineStyle = {
+  fontSize: '15px',
+  color: GRAY,
+  paddingBottom: '28px',
+  marginBottom: '36px',
+  borderBottom: `1px solid ${LINE}`,
+}
+
+const h2Style = {
+  fontSize: '26px',
+  fontWeight: 700,
+  lineHeight: 1.25,
+  color: DARK,
+  marginTop: '48px',
+  marginBottom: '14px',
+}
+
+const pStyle = {
+  fontSize: '18px',
+  lineHeight: 1.75,
+  color: TEXT,
+  marginBottom: '20px',
+}
+
+const introStyle = { ...pStyle, fontSize: '20px', color: DARK }
+
+const ctaBoxStyle = {
+  backgroundColor: BEIGE,
+  border: `1px solid ${LINE}`,
+  borderRadius: '12px',
+  padding: '36px 28px',
+  marginTop: '56px',
+  textAlign: 'center',
+}
+
+const ctaTitleStyle = { fontSize: '24px', fontWeight: 700, color: DARK, marginBottom: '10px' }
+
+const ctaTextStyle = { fontSize: '17px', lineHeight: 1.6, color: TEXT, marginBottom: '24px' }
+
+const buttonStyle = {
+  display: 'inline-block',
+  backgroundColor: GOLD,
+  color: '#ffffff',
+  fontSize: '16px',
+  fontWeight: 600,
+  padding: '14px 28px',
+  borderRadius: '8px',
+  textDecoration: 'none',
+}
+
+const backLinkStyle = {
+  display: 'inline-block',
+  marginBottom: '28px',
+  fontSize: '15px',
+  color: GOLD,
+  textDecoration: 'none',
+  fontWeight: 600,
+}
+
+const disclaimerStyle = { fontSize: '13px', color: GRAY, marginTop: '32px', lineHeight: 1.6 }
 
 function ArticlePage() {
   return (
     <main style={pageStyle}>
+      <a href="/articles" style={backLinkStyle}>
+        ← All Articles
+      </a>
+
+      <p style={eyebrowStyle}>Seller Guide</p>
       <h1 style={h1Style}>What Is My Home Worth in Miami-Dade? 5 Ways to Find Out</h1>
       <p style={bylineStyle}>By Jose Anzola, Compass Real Estate</p>
 
-      <p style={pStyle}>
+      <p style={introStyle}>
         If you own a home in Miami-Dade, sooner or later you will ask yourself,
         "What is my home worth?" Maybe you are thinking about selling, maybe you
         are just curious, or maybe a neighbor's sale got you wondering. Whatever
@@ -118,15 +206,19 @@ function ArticlePage() {
         still know where you stand. If you decide to sell, you will already have
         a plan.
       </p>
-      <p style={pStyle}>
-        Ready to find out what your home is worth?{' '}
-        <a href="/contact" style={{ textDecoration: 'underline', fontWeight: 600 }}>
-          Contact me here
-        </a>{' '}
-        and I will get back to you with your home value.
-      </p>
 
-      <p style={{ fontSize: '14px', color: '#666666', marginTop: '40px' }}>
+      <div style={ctaBoxStyle}>
+        <p style={ctaTitleStyle}>Ready to find out what your home is worth?</p>
+        <p style={ctaTextStyle}>
+          Send me a quick message and I will get back to you with your
+          no-obligation home value.
+        </p>
+        <a href="/contact" style={buttonStyle}>
+          Get My Home Value
+        </a>
+      </div>
+
+      <p style={disclaimerStyle}>
         This article is general information and is not an appraisal or a
         guarantee of value.
       </p>
