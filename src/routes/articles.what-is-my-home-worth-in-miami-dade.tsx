@@ -122,7 +122,7 @@ function ArticlePage() {
       <p style={bylineStyle}>By Jose Anzola, Compass Real Estate</p>
 
             <img
-        src="/articlephoto1.png"
+        src="/articlephoto1.jpg"
         alt="Miami-Dade home with a For Sale sign"
         style={photoStyle}
       />
