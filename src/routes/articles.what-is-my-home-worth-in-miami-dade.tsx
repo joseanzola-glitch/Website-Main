@@ -227,7 +227,7 @@ function ArticlePage() {
           Send me a quick message and I will get back to you with your
           no-obligation home value.
         </p>
-        <a href="/contact" style={buttonStyle}>
+        <a href="/seller-valuation" style={buttonStyle}>
           Get My Home Value
         </a>
       </div>
