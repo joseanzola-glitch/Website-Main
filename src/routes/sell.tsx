@@ -176,7 +176,7 @@ function Sell() {
         </div>
       </section>
 
-            {/* Seller proof: reviews + recent sales */}
+      {/* Seller proof: reviews + recent sales */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -230,6 +230,69 @@ function Sell() {
           </div>
         </div>
       </section>
+
+      {/* Helpful reading: articles */}
+      <section className="py-20 px-6 bg-ivory-100 border-y border-luxury-950/10">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-gold-600 font-semibold uppercase tracking-[0.2em] text-xs mb-4">Helpful Reading</div>
+            <div className="gold-divider mx-auto mb-6" />
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-luxury-950 leading-tight">
+              Thinking about selling? Start here.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            {[
+              {
+                link: '/articles/what-is-my-home-worth-in-miami-dade',
+                photo: '/articlephoto1.jpg',
+                alt: 'Miami-Dade home with a For Sale sign',
+                label: 'Seller Guide',
+                title: 'What Is My Home Worth in Miami-Dade? 5 Ways to Find Out',
+                preview:
+                  'Online estimates are a start, but they cannot see inside your home. Here are five ways to find out what your home is really worth.',
+              },
+              {
+                link: '/articles/best-time-to-sell-a-home-in-south-florida',
+                photo: '/articlephoto2.jpg',
+                alt: 'South Florida home in sunny winter weather',
+                label: 'Market Timing',
+                title: 'Best Time to Sell a Home in South Florida: Does Winter Help?',
+                preview:
+                  'Winter is a strong season to sell in South Florida. See how listing now compares with waiting for spring, plus a simple prep timeline.',
+              },
+            ].map((a) => (
+              <a
+                key={a.link}
+                href={a.link}
+                className="luxury-card rounded-2xl overflow-hidden block hover:shadow-xl transition"
+              >
+                <img
+                  src={a.photo}
+                  alt={a.alt}
+                  className="w-full aspect-[16/10] object-cover"
+                  loading="lazy"
+                />
+                <div className="p-6">
+                  <div className="text-gold-600 text-[10px] font-bold uppercase tracking-widest mb-2">{a.label}</div>
+                  <h3 className="font-serif text-xl font-bold text-luxury-950 mb-3 leading-snug">{a.title}</h3>
+                  <p className="text-luxury-500 text-sm leading-relaxed mb-4">{a.preview}</p>
+                  <span className="text-gold-600 text-sm font-semibold">Read article →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <a href="/articles" className="btn-gold-outline px-8 py-4 rounded-lg text-base">
+              See All Articles
+              <ArrowRightIcon className="w-4 h-4 ml-2" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 md:py-24 px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
