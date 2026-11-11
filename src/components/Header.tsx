@@ -3,14 +3,12 @@ import { useState } from 'react'
 import { PhoneIcon } from './Icons'
 
 const navLinks = [
-  { label: 'Home', to: '/' },
   { label: 'Sell', to: '/sell' },
   { label: 'Buy', to: '/buy' },
   { label: 'Listings', to: '/listings' },
   { label: 'Neighborhoods', to: '/neighborhoods' },
+  { label: 'Articles', to: '/articles' },
   { label: 'About', to: '/about' },
-  { label: 'Testimonials', to: '/testimonials' },
-  { label: 'Contact', to: '/contact' },
 ]
 
 export function Header() {
@@ -47,7 +45,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <a
               href="tel:+13059045613"
-              className="hidden md:inline-flex items-center gap-2 text-luxury-600 hover:text-gold-600 transition text-sm font-medium"
+              className="hidden xl:inline-flex items-center gap-2 text-luxury-600 hover:text-gold-600 transition text-sm font-medium"
               aria-label="Call Now"
             >
               <PhoneIcon className="w-4 h-4" />
