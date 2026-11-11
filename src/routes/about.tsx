@@ -137,6 +137,27 @@ function About() {
         </div>
       </section>
 
+      <section className="bg-ivory-100 py-16 px-6 border-y border-luxury-950/10">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-1 mb-5">
+            <StarIcon className="w-5 h-5 text-gold-600" />
+            <StarIcon className="w-5 h-5 text-gold-600" />
+            <StarIcon className="w-5 h-5 text-gold-600" />
+            <StarIcon className="w-5 h-5 text-gold-600" />
+            <StarIcon className="w-5 h-5 text-gold-600" />
+          </div>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Hear it from my clients.</h2>
+          <p className="text-luxury-600 text-lg leading-relaxed mb-8">
+            The best way to know what working with me is like is to hear from the people
+            who already have. Read what buyers and sellers have said about their experience.
+          </p>
+          <Link to="/testimonials" className="btn-gold px-8 py-4 rounded-lg text-base">
+            Read Client Testimonials
+            <ArrowRightIcon className="w-4 h-4 ml-2" />
+          </Link>
+        </div>
+      </section>
+
       <CTABanner />
     </div>
   )
