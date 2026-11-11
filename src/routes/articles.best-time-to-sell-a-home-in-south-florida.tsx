@@ -260,7 +260,7 @@ function ArticlePage() {
         Seasonal buyers often move quickly, so a well-priced home can stand out
         right away. If you want to know where your home stands, you can start
         with a{' '}
-        <a href="/contact" style={linkStyle}>
+        <a href="/seller-valuation" style={buttonStyle}>
           free home value estimate
         </a>
         .
