@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { PhoneIcon, MailIcon } from '../components/Icons'
-import { HomeLightBadge } from "@/components/HomeLightBadge";
 
 export const Route = createFileRoute('/seller-valuation')({
   component: SellerValuation,
@@ -153,10 +152,6 @@ function SellerValuation() {
             </figure>
           ))}
         </section>
-
-        <div className="flex justify-center mb-6">
-  <HomeLightBadge />
-</div>
 
         <h1 className="font-serif text-4xl md:text-5xl font-bold leading-tight text-center">
           What could your Miami home sell for?
