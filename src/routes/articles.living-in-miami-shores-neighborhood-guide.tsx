@@ -197,7 +197,7 @@ function ArticlePage() {
       <p style={bylineStyle}>By Jose Anzola | Compass Real Estate | South Florida</p>
 
       <img
-        src="/articlephoto3.jpg"
+        src="/living-in-miami-shores-guide.jpg"
         alt="Tree-lined street in Miami Shores, Florida"
         style={photoStyle}
       />
