@@ -15,25 +15,6 @@ export const Route = createFileRoute('/articles/')({
 
 // ---- YOUR ARTICLES LIST (add new articles here later) ----
 const articles = [
-  {
-    link: '/articles/what-is-my-home-worth-in-miami-dade',
-    photo: '/articlephoto1.jpg',
-    photoAlt: 'Miami-Dade home with a For Sale sign',
-    label: 'Seller Guide',
-    title: 'What Is My Home Worth in Miami-Dade? 5 Ways to Find Out',
-    preview:
-      'Online estimates are a start, but they cannot see inside your home. Here are five ways to find out what your Miami-Dade home is really worth.',
-  },
-    {
-    link: '/articles/best-time-to-sell-a-home-in-south-florida',
-    photo: '/articlephoto2.jpg',
-    photoAlt: 'South Florida home in sunny winter weather',
-    label: 'Market Timing',
-    title: 'Best Time to Sell a Home in South Florida: Does Winter Help?',
-    preview:
-      'Winter is a strong season to sell in South Florida. See how listing now compares with waiting for spring, plus a simple prep timeline and pricing tips.',
-  },
-
     {
     link: '/articles/living-in-miami-shores-neighborhood-guide',
     photo: '/living-in-miami-shores-guide.jpg',
@@ -42,6 +23,24 @@ const articles = [
     title: 'Living in Miami Shores: A Neighborhood Guide for Buyers and Sellers',
     preview:
       'Tree-lined streets, small-town charm and quick access to Miami. See home types and prices, parks, dining, schools and commute times in the Village Beautiful.',
+  },
+   {
+    link: '/articles/best-time-to-sell-a-home-in-south-florida',
+    photo: '/articlephoto2.jpg',
+    photoAlt: 'South Florida home in sunny winter weather',
+    label: 'Market Timing',
+    title: 'Best Time to Sell a Home in South Florida: Does Winter Help?',
+    preview:
+      'Winter is a strong season to sell in South Florida. See how listing now compares with waiting for spring, plus a simple prep timeline and pricing tips.',
+  },
+  {
+    link: '/articles/what-is-my-home-worth-in-miami-dade',
+    photo: '/articlephoto1.jpg',
+    photoAlt: 'Miami-Dade home with a For Sale sign',
+    label: 'Seller Guide',
+    title: 'What Is My Home Worth in Miami-Dade? 5 Ways to Find Out',
+    preview:
+      'Online estimates are a start, but they cannot see inside your home. Here are five ways to find out what your Miami-Dade home is really worth.',
   },
 ]
 
