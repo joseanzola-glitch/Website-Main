@@ -36,7 +36,7 @@ const articles = [
 
     {
     link: '/articles/living-in-miami-shores-neighborhood-guide',
-    photo: '/articlephoto3.jpg',
+    photo: '/living-in-miami-shores-guide.jpg',
     photoAlt: 'Tree-lined street in Miami Shores, Florida',
     label: 'Neighborhood Guide',
     title: 'Living in Miami Shores: A Neighborhood Guide for Buyers and Sellers',
