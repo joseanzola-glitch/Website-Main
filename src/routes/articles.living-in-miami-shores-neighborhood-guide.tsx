@@ -377,12 +377,12 @@ function ArticlePage() {
       <div style={listingBoxStyle}>
         <img
           src="/153.jpg"
-          alt="Renovated single-story home on NE 109th Street in Miami Shores"
+          alt="Renovated single-story home on 153 NE 109th Street in Miami Shores"
           style={listingPhotoStyle}
         />
         <div style={listingBodyStyle}>
           <p style={listingLabelStyle}>Featured Listing</p>
-          <p style={listingTitleStyle}>NE 109th Street, Miami Shores, FL 33161</p>
+          <p style={listingTitleStyle}>153 NE 109th Street, Miami Shores, FL 33161</p>
           <p style={listingPriceStyle}>$1,980,000</p>
           <p style={listingTextStyle}>
             Tucked away on a quiet dead-end street, this 4-bedroom,
