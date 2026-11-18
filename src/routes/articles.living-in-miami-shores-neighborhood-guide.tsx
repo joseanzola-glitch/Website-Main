@@ -212,7 +212,7 @@ function ArticlePage() {
       <p style={bylineStyle}>By Jose Anzola | Compass Real Estate | South Florida</p>
 
       <img
-        src="/articlephoto3.jpg"
+        src="/living-in-miami-shores-guide.jpg"
         alt="Tree-lined street in Miami Shores, Florida"
         style={photoStyle}
       />
@@ -308,3 +308,156 @@ function ArticlePage() {
           <strong>North Miami:</strong> Osteria, a neighborhood Italian
           favorite.
         </li>
+        <li style={liStyle}>
+          <strong>Design District:</strong> Michael's Genuine Food & Drink
+          (contemporary American) and Nami Nori (Japanese hand rolls).
+        </li>
+        <li style={liStyle}>
+          <strong>Little River:</strong> Fooq's (Mediterranean, wood-fired) and
+          Pastamarket (handmade Italian).
+        </li>
+        <li style={liStyle}>
+          <strong>Bal Harbour and Edgewater:</strong> Makoto (Japanese) and
+          Amara at Paraiso (waterfront dining with Latin flavors) for a special
+          night out.
+        </li>
+      </ul>
+      <p style={pStyle}>Menus and hours change, so check before you go.</p>
+
+      <h3 style={h3Style}>Schools</h3>
+      <p style={pStyle}>
+        Public schools serving the village include Miami Shores Elementary
+        School, Horace Mann Middle School (in nearby El Portal) and Miami Edison
+        Senior High. The village is also home to Doctors Charter School (grades
+        6 to 12). There are several private options, including church-affiliated
+        schools and Montessori programs, and Barry University is right in the
+        village.
+      </p>
+      <p style={pStyle}>
+        <strong>Tip for families:</strong> school zoning can change and depends
+        on the exact address, so always confirm with Miami-Dade County Public
+        Schools before you buy.
+      </p>
+
+      <h2 style={h2Style}>4. Commute and Getting Around</h2>
+      <p style={pStyle}>
+        Location is one of Miami Shores' biggest advantages. The village sits
+        between Interstate 95 and Biscayne Boulevard, so you have two major
+        routes close by.
+      </p>
+      <ul style={listStyle}>
+        <li style={liStyle}>
+          <strong>Downtown Miami and Brickell:</strong> About 8 miles south.
+          Depending on traffic, the drive can be around 15 to 20 minutes.
+        </li>
+        <li style={liStyle}>
+          <strong>Wynwood, the Design District and Midtown:</strong> Just
+          minutes away.
+        </li>
+        <li style={liStyle}>
+          <strong>Miami International Airport:</strong> Less than 10 miles away.
+        </li>
+        <li style={liStyle}>
+          <strong>Fort Lauderdale-Hollywood International Airport:</strong>{' '}
+          Roughly 17 miles north.
+        </li>
+      </ul>
+      <p style={pStyle}>
+        As always in South Florida, rush hour can add time, so test your commute
+        at the hours you would actually travel.
+      </p>
+
+      <h2 style={h2Style}>5. Homes for Sale in the Area + Contact Jose</h2>
+      <p style={pStyle}>
+        Miami Shores has a limited number of homes on the market at any time,
+        and the best ones can move quickly. That makes local guidance especially
+        valuable.
+      </p>
+
+      <div style={listingBoxStyle}>
+        <img
+          src="/153.jpg"
+          alt="Renovated single-story home on NE 109th Street in Miami Shores"
+          style={listingPhotoStyle}
+        />
+        <div style={listingBodyStyle}>
+          <p style={listingLabelStyle}>Featured Listing</p>
+          <p style={listingTitleStyle}>NE 109th Street, Miami Shores, FL 33161</p>
+          <p style={listingPriceStyle}>$1,980,000</p>
+          <p style={listingTextStyle}>
+            Tucked away on a quiet dead-end street, this 4-bedroom,
+            1,942-square-foot single-story home has been completely reimagined
+            from the ground up, keeping only the original exterior walls. All of
+            the work was permitted through the Village of Miami Shores.
+          </p>
+          <p style={listingTextStyle}>
+            Inside, you will find soaring ceilings, a kitchen with Thermador
+            appliances and a Bosch dishwasher, and custom-finished closets in
+            every bedroom. Major upgrades include a brand-new roof, all-new
+            plumbing, and a new septic tank and drain field. Outside, there is a
+            newly built in-ground saltwater pool, mature mango and avocado trees
+            and a brand-new driveway, all on a 9,225-square-foot lot (about 0.21
+            acre). Built in 1946, it offers the charm of a classic Miami Shores
+            address with the feel of a virtually new home.
+          </p>
+          <p style={listingTextStyle}>
+            <a href="/contact" style={linkStyle}>
+              Contact Jose
+            </a>{' '}
+            to schedule a showing. Showings are by appointment only.
+          </p>
+          <a
+            href="https://www.compass.com/homedetails/northeast-109th-street-miami-shores-fl-33161/2226187451980537033_lid/?origin=listing_page&origin_type=copy_url&agent_id=676a02c670e3670001b58c7e"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={buttonStyle}
+          >
+            View Listing on Compass
+          </a>
+        </div>
+      </div>
+
+      <ul style={listStyle}>
+        <li style={liStyle}>
+          <strong>If you are buying:</strong> I can set up a custom search for
+          Miami Shores homes for sale, alert you when new listings hit, and walk
+          you through each neighborhood.
+        </li>
+        <li style={liStyle}>
+          <strong>If you are selling:</strong> I can give you a no-obligation
+          home value based on recent nearby sales and talk through the best
+          timing and pricing strategy.
+        </li>
+      </ul>
+      <p style={pStyle}>
+        As a South Florida real estate agent with Compass, I would love to help
+        you find your place in the Village Beautiful.
+      </p>
+
+      <div style={ctaBoxStyle}>
+        <p style={ctaTitleStyle}>Ready to explore Miami Shores?</p>
+        <p style={ctaTextStyle}>
+          Start your search or get your free home value.
+        </p>
+        <div style={buttonRowStyle}>
+          <a href="/contact" style={buttonStyle}>
+            Start My Search
+          </a>
+          <a href="/seller-valuation" style={buttonOutlineStyle}>
+            Get My Home Value
+          </a>
+        </div>
+      </div>
+
+      <p style={noteStyle}>
+        Price figures are based on an MLS search of active listings in mid-November
+        2026 and on Miami Realtors data for the Miami-Dade County single-family
+        median sale price in July 2026.
+      </p>
+      <p style={noteStyle}>
+        Jose Anzola is a South Florida real estate agent with Compass, helping
+        homeowners and buyers across Miami-Dade and the surrounding area.
+      </p>
+    </main>
+  )
+}
