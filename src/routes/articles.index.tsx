@@ -33,7 +33,18 @@ const articles = [
     preview:
       'Winter is a strong season to sell in South Florida. See how listing now compares with waiting for spring, plus a simple prep timeline and pricing tips.',
   },
+
+    {
+    link: '/articles/living-in-miami-shores-neighborhood-guide',
+    photo: '/articlephoto3.jpg',
+    photoAlt: 'Tree-lined street in Miami Shores, Florida',
+    label: 'Neighborhood Guide',
+    title: 'Living in Miami Shores: A Neighborhood Guide for Buyers and Sellers',
+    preview:
+      'Tree-lined streets, small-town charm and quick access to Miami. See home types and prices, parks, dining, schools and commute times in the Village Beautiful.',
+  },
 ]
+
 
 // ---- COLORS ----
 const GOLD = '#9a7429'
