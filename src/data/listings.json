@@ -56,17 +56,6 @@
   },
   {
     "status": "Active",
-    "price": "$1,891,500",
-    "beds": 4,
-    "baths": 4,
-    "sqft": "2,488",
-    "address": "2434 SW 19th St",
-    "neighborhood": "Shenandoah",
-    "image": "/2434.jpg",
-    "compassUrl": "https://www.compass.com/homedetails/2434-SW-19th-St-Miami-FL-33145/1COEFX_pid/"
-  },
-  {
-    "status": "Active",
     "price": "$1,049,000",
     "beds": 2,
     "baths": 2,
@@ -97,6 +86,17 @@
     "neighborhood": "Toscano",
     "image": "/7350.jpg",
     "compassUrl": "https://www.compass.com/homedetails/7350-SW-89th-St-Unit-706S-Miami-FL-33156/1DC8EM_pid/"
+  },
+  {
+    "status": "Sold",
+    "price": "$1,891,500",
+    "beds": 4,
+    "baths": 4,
+    "sqft": "2,488",
+    "address": "2434 SW 19th St",
+    "neighborhood": "Shenandoah",
+    "image": "/2434.jpg",
+    "compassUrl": "https://www.compass.com/homedetails/2434-SW-19th-St-Miami-FL-33145/1COEFX_pid/"
   },
   {
     "status": "Sold",
