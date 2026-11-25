@@ -58,6 +58,9 @@ function About() {
               every buyer I represent. I know what creates value, what kills it, and how to
               position a property so the numbers work.
             </p>
+            <p className="text-luxury-600 text-lg leading-relaxed mb-6">
+  Jose is a licensed Florida real estate agent (License #3396503) with Compass, with more than 9 years of experience in real estate.
+</p>
           </div>
         </div>
       </section>
