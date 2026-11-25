@@ -16,6 +16,15 @@ export const Route = createFileRoute('/articles/')({
 // ---- YOUR ARTICLES LIST (add new articles here later) ----
 const articles = [
     {
+    link: '/articles/getting-your-miami-home-ready-to-sell-before-the-holidays',
+    photo: '/articlephoto4.jpg',
+    photoAlt: 'Bright, clean living room ready for a home sale in Miami',
+    label: 'Seller Checklist',
+    title: 'Getting Your Miami Home Ready to Sell Before the Holidays: A 10-Step Checklist',
+    preview:
+      'From decluttering and curb appeal to photos, paperwork and pricing, here is a simple 10-step checklist to get your Miami home ready to sell.',
+  },
+    {
     link: '/articles/living-in-miami-shores-neighborhood-guide',
     photo: '/living-in-miami-shores-guide.jpg',
     photoAlt: 'Tree-lined street in Miami Shores, Florida',
