@@ -51,12 +51,14 @@ export function Header() {
               <PhoneIcon className="w-4 h-4" />
               (305) 904-5613
             </a>
-            <Link
-              to="/contact"
-              className="btn-gold hidden sm:inline-block px-5 py-2.5 rounded-lg text-sm"
-            >
-              Schedule a Call
-            </Link>
+            <a
+  href="https://calendar.app.google/ZShjrGpbacHPYxZR9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-gold hidden sm:inline-block px-5 py-2.5 rounded-lg text-sm"
+>
+  Schedule a Call
+</a>
             <button
               onClick={() => setMenuOpen(true)}
               className="lg:hidden text-luxury-950/80 hover:text-luxury-950 cursor-pointer"
